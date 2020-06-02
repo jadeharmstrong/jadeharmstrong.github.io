@@ -27,6 +27,8 @@
 <body>  	
 	<title>The Silver Lining News</title>
 	
+	<div id="pixel"></div>
+	
 	<div id="header">
 		<h1>The Silver Lining</h1>
 		<h2>~Bringing inspiration from your local community~</h2>
@@ -116,4 +118,34 @@
                   
 </body>
 
+<script>
+var colors = [
+  "rgb(54,69,79)",
+  "rgb(192,192,192)",
+  "rgb(64,64,64)",
+  "rgb(128,128,128)",
+  "rgb(150,150,150)",
+  "rgb(224,224,224)",
+]
+
+//helper function see
+function getRandomColor() {
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    return color;
+}
+
+var num_of_pixels = 1000;
+
+var output = "";
+
+for(var i = 0; i < num_of_pixels; i++) {
+  output+= '<div style="'
+  output+= "background-color:"+getRandomColor()+";"
+  output+='"" class="pixel"></div>'
+}
+
+var container = document.getElementById('container');
+pixel.innerHTML = output
+</script>
+	
 </html>
