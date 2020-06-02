@@ -7,51 +7,15 @@
 	
 	@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nixie+One&display=swap');
 	
-	#header {border: 5px outset red, background-color:black; colour:white;}
+	#header {background-color:black}
 	h1 {color:lightgrey; font-family: 'Nixie One', cursive; font-size:7vw; text-align:center;}
 	h2 {color:lightgrey; font-family: 'Coming Soon', cursive; font-size:2vw; text-align:center;}
 
-	#newspaper {background color:lightgrey; color:red;}  
-	
-	.header {
-  	background-color: #F1F1F1;
-  	text-align: center;
-  	padding: 20px;
-	}
-	
-	.column 1 {
-	background-image:url('');background-size:contain;background-repeat:no-repeat;
-  	background-position: center;
-  	float: left;
-  	width: 33.33%;
-	}
-	
-	.column 2 {
-  	float: left;
-  	width: 33.33%;
-	}
-	
-	.column 3 {
-  	float: left;
-  	width: 33.33%;
-	}
-	
-	.row:after {
-  	content: "";
-  	display: table;
-  	clear: both;
-	}
-
-	@media screen and (max-width: 600px) {
-  	.column {
-   	 width: 100%;
-  	}
-	
-	.footer {
-  	background-color: #F1F1F1;
-  	text-align: center;
-  	padding: 10px;
-	}
+	#form {background-color:black; font-family: 'Coming Soon', cursive; font-size:2vw}
+    
+	#newspaper {background-color:lightgrey; color:black;}  
+    
+    #footer {background-color:black; color: lightgrey; font-family: 'Coming Soon', cursive; font-size:2vw}  
 	
 </style>
 </head>
@@ -64,59 +28,83 @@
 		<h2>Your daily inspirational online newspaper</h2>
 	</div>
 	
-	<form action>
+	<div id="form"><form action>
   		<input list="country">
   		<datalist id="country">
 	    	<option value="Australia">
    		<option value="UK">
     		<option value="USA">
   		</datalist> 
-	</form>
+	</form></div>
 	
 	<div id="newspaper">Newspaper content</div>
-	
-	<div class="newspaper content" style="max-width:1200px;margin-top:100px">
-	<div class="newspaper content row 1 column 1" id="row1col1">
-     	<img url="https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/100984327_3196614683711436_6089922079632086958_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=fdISEEEI_6MAX_H_sIk&oh=4eff4575e4196adbe776a39c82d05b2a&oe=5EFC58D7" style="width:100%">
-      	<h3>Silver Lining 1</h3>
-      	<p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
- 	</div>
+	<table width=100% border="0" cellpadding="5">
+		<div class="row1"> <tr>
+			<div id="r1c1"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
-    
+			<div id="r1c2"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
-<!--output of form?
+			<div id="r1c3"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
+		</tr></div>
 
-This section needs to say if form is Australia, search url for Australia location, return and display all Australia post image URLs and descriptions (limited to approx. 300 characters)
-url: https://cache1.phantombooster.com/VhQKMIRLtrQ/kMv4P699sOefdhOgOGut5A/silverlining%20posts%20automated%20limit%20to%201000.csv-->
-<SCRIPT Language="JavaScript">
-<!--
+		<div class="row2"> <tr>
+			<div id="r2c1"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
+			<div id="r2c2"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
-let url "https://cache1.phantombooster.com/VhQKMIRLtrQ/kMv4P699sOefdhOgOGut5A/silverlining%20posts%20automated%20limit%20to%201000.csv";
+			<div id="r2c3"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
+		</tr></div>
 
-function preload() {
-}
+		<div class="row3"> <tr>
+			<div id="r3c1"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
-//
+			<div id="r3c2"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
 
-//function loadDoc("https://cache1.phantombooster.com/VhQKMIRLtrQ/kMv4P699sOefdhOgOGut5A/silverlining%20posts%20automated%20limit%20to%201000.csv", myFunction1); {
-  //var description, imgUrl;
-  //description = new XMLHttpRequest();
-  //description.onreadystatechange = function() {
-    //if (description.readyState == Australia) {
-      //cFunction(description);
-    //}
-  //};
-  //xhttp.open("GET", url, true);
-  //xhttp.send();
-//}
+			<div id="r3c3"> <td align="center" valign="center">
+				<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+				<br />
+				Caption text centered under the image.
+			</td></div>
+		</tr></div>
 
-//function myFunction1(xhttp) {
-  // action goes here
-//}
--->
-</script>
-                       
+	</table>
+
+	<div id="footer">
+		Footer
+	</div>
+                  
 </body>
 
 </html>
