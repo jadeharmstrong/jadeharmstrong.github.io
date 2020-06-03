@@ -39,7 +39,37 @@
 <body>  	
 	<title>The Silver Lining News</title>
 	
-	<div id="pixel"></div>
+	<div id="pixel">
+		<script>
+		var colors = [
+  			"rgb(54,69,79)",
+  			"rgb(192,192,192)",
+  			"rgb(64,64,64)",
+  			"rgb(128,128,128)",
+  			"rgb(150,150,150)",
+ 			"rgb(224,224,224)",
+			]
+	
+		function getRandomColor() {
+			var color = colors[Math.floor(Math.random() * colors.length)];
+    			return color;
+			}
+
+		var num_of_pixels = 500;
+
+		var output = "";
+
+		for(var i = 0; i < num_of_pixels; i++) {
+  			output+= '<div style="'
+  			output+= "background-color:"+getRandomColor()+";"
+  			output+='"" class="pixel"></div>'
+			}
+
+		var pixel = document.getElementById('pixel');
+			pixel.innerHTML = output
+
+		</script>
+	</div>
 	
 	<div class="linebreak">            
 	</div>
@@ -135,37 +165,5 @@
 	</div>
                   
 </body>
-
-<script>
-	window.onclick = getRandomColor;
-
-	var colors = [
-  		"rgb(54,69,79)",
-  		"rgb(192,192,192)",
-  		"rgb(64,64,64)",
-  		"rgb(128,128,128)",
-  		"rgb(150,150,150)",
- 		 "rgb(224,224,224)",
-		]
-	
-	function getRandomColor() {
-		var color = colors[Math.floor(Math.random() * colors.length)];
-    		return color;
-		}
-
-	var num_of_pixels = 500;
-
-	var output = "";
-
-	for(var i = 0; i < num_of_pixels; i++) {
-  		output+= '<div style="'
-  		output+= "background-color:"+getRandomColor()+";"
-  		output+='"" class="pixel"></div>'
-		}
-
-	var pixel = document.getElementById('pixel');
-		pixel.innerHTML = output
-	
-</script>
 	
 </html>
