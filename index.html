@@ -49,6 +49,9 @@
 		<h1>The Silver Lining</h1>
 	</div>
 	
+	<div id="pixel2">
+	</div>
+	
 	<div id="text">
 		<h2>~Bringing inspiration from your local community~</h2>
 		<h3>Where would you like to go?</h3>
@@ -162,6 +165,36 @@
 
 	var pixel = document.getElementById('pixel');
 		pixel.innerHTML = output
+
+</script>
+		
+<script>
+	var colors = [
+  		"rgb(54,69,79)",
+  		"rgb(192,192,192)",
+  		"rgb(64,64,64)",
+  		"rgb(128,128,128)",
+  		"rgb(150,150,150)",
+ 		"rgb(224,224,224)",
+		]
+	
+	function getRandomColor() {
+		var color = colors[Math.floor(Math.random() * colors.length)];
+    		return color;
+		}
+
+	var num_of_pixels = 500;
+
+	var output = "";
+
+	for(var i = 0; i < num_of_pixels; i++) {
+  		output+= '<div style="'
+  		output+= "background-color:"+getRandomColor()+";"
+  		output+='"" class="pixel2"></div>'
+		}
+
+	var pixel = document.getElementById('pixel2');
+		pixel2.innerHTML = output
 
 </script>
 	
