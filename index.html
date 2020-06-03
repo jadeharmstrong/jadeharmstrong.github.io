@@ -8,7 +8,7 @@
 			
 	@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nixie+One&display=swap');
 	
-	h1 {color:lightgrey; font-family: 'Nixie One', cursive; font-size:8vw; text-align:center;&::before {content: "\A";}}
+	h1 {color:lightgrey; font-family: 'Nixie One', cursive; font-size:8vw; text-align:center;}
 	h2 {color:lightgrey; font-family: 'Coming Soon', cursive; font-size:1.5vw; text-align:center;}
 	h3 {color:lightgrey; font-family: 'Coming Soon', cursive; font-size:1vw; text-align:center;}
 	
@@ -137,17 +137,7 @@
 
 <script>
 window.onclick = getRandomColor;
-	
-var colors = [
-  "rgb(54,69,79)",
-  "rgb(192,192,192)",
-  "rgb(64,64,64)",
-  "rgb(128,128,128)",
-  "rgb(150,150,150)",
-  "rgb(224,224,224)",
-]
 
-//helper function see
 function getRandomColor() {
     var color = colors[Math.floor(Math.random() * colors.length)];
     return color;
@@ -163,7 +153,7 @@ for(var i = 0; i < num_of_pixels; i++) {
   output+='"" class="pixel"></div>'
 }
 
-var container = document.getElementById('container');
+var pixel = document.getElementById('pixel');
 pixel.innerHTML = output
 </script>
 	
