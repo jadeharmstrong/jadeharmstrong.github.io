@@ -10,7 +10,9 @@
 	h2 {color:rgb(170,169,173); font-family: 'Coming Soon', cursive; font-size:1.5vw; text-align:center;}
 	h3 {color:black; font-family: 'Coming Soon', cursive; font-size:1.5vw; text-align:center;}
 	h4 {color:rgb(170,169,173); font-family: 'Coming Soon', cursive; font-size:1vw; text-align:right;}
+	
 	.linebreak{height:100px;}
+	
 	.pixel, .pixel2 {
   		margin:2px;
  		float:left;
@@ -20,27 +22,37 @@
 		}
 		
 	#TSL {background-color:height:25%;black; width:100%;overflow:hidden;}	
+	
 	#text {background-color:black; width:100%; top-margin:25%;}
+	
 	.button {background-color: rgb(170,169,173); color:black; font-family: 'Coming Soon', cursive; font-size:1.5vw; align: center; text-align:center; bottom-margin:25%}
+	
 	#newspaper {background-color:rgb(170,169,173); color:black; width:100%;}  
+	
 	table.newspaper-table {font-family: 'Coming Soon', cursive; font-size:2vw, color:white;}
-  	#footer {background-color:black; color: rgb(170,169,173); font-family: 'Coming Soon', cursive; font-size:1vw; text-align:right;float:right;}  
+  	
+	#footer {background-color:black; color: rgb(170,169,173); font-family: 'Coming Soon', cursive; font-size:1vw; text-align:right;float:right;}  
+	
 	.flow {position:relative; background-color:#000; 
 	margin-top:6em; float:left;
 	-webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
- .flowboxes {position: relative;width: 84%;display: -ms-grid;display: grid;margin:0 auto;
--ms-grid-columns:(minmax(183px, 2fr))[auto-fit];
-grid-template-columns: repeat(auto-fit, minmax(183px, 2fr));
-grid-gap: 14px;
--ms-grid-column-align: center;
-justify-items: center;font-size:medium;
-background-color:0;
-text-wrap:unrestricted;
-}
-.floating-box {font-size:14px;width:100%;height:auto;padding:5px;margin: 0px;color:white;text-align:left;vertical-align:bottom;}
-div.floating-box img {width:100%; height:auto;}
-div.floating-box p { }
+ 
+	.flowboxes {position: relative;width: 84%;display: -ms-grid;display: grid;margin:0 auto;
+	-ms-grid-columns:(minmax(183px, 2fr))[auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(183px, 2fr));
+	grid-gap: 14px;
+	-ms-grid-column-align: center;
+	justify-items: center;font-size:medium;
+	background-color:0;
+	text-wrap:unrestricted;
+	}
+	
+	.floating-box {font-size:14px;width:100%;height:auto;padding:5px;margin: 0px;color:white;text-align:left;vertical-align:bottom;}
+	div.floating-box img {width:100%; height:auto;}
+	div.floating-box p { }
+
 </style>
+	
 </head>
 <body style="background-color:black;">
 <div id="top">
@@ -56,6 +68,7 @@ div.floating-box p { }
 	</div>
 	
 	<div id="pixel2"></div>
+	
 </div> <!--End top...-->
     <div class="flow">
 <!--Currently Editing...-->
